@@ -1,0 +1,54 @@
+C:\temp\2bodysim\2bodysim\bin\Debug\2bodysim.exe.config
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim.csprojResolveAssemblyReference.cache
+C:\temp\2bodysim\2bodysim\obj\Debug\MainWindow.baml
+C:\temp\2bodysim\2bodysim\obj\Debug\MainWindow.g.cs
+C:\temp\2bodysim\2bodysim\obj\Debug\App.g.cs
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim_MarkupCompile.cache
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim.g.resources
+C:\temp\2bodysim\2bodysim\obj\Debug\_2bodysim.Properties.Resources.resources
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim.csproj.GenerateResource.Cache
+C:\temp\2bodysim\2bodysim\bin\Debug\2bodysim.exe
+C:\temp\2bodysim\2bodysim\bin\Debug\2bodysim.pdb
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim.exe
+C:\temp\2bodysim\2bodysim\obj\Debug\2bodysim.pdb
+C:\Users\user\Desktop\2bodysim\2bodysim\bin\Debug\2bodysim.exe.config
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim.exe
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim.pdb
+C:\Users\user\Desktop\2bodysim\2bodysim\bin\Debug\2bodysim.exe
+C:\Users\user\Desktop\2bodysim\2bodysim\bin\Debug\2bodysim.pdb
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\MainWindow.baml
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\MainWindow.g.cs
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\App.g.cs
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim_MarkupCompile.cache
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim.g.resources
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\_2bodysim.Properties.Resources.resources
+C:\Users\user\Desktop\2bodysim\2bodysim\obj\Debug\2bodysim.csproj.GenerateResource.Cache
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.exe.config
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.exe
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.pdb
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.AssemblyReference.cache
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\MainWindow.baml
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\MainWindow.g.cs
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\App.g.cs
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim_MarkupCompile.cache
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.g.resources
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\_2bodysim.Properties.Resources.resources
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.GenerateResource.cache
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.CoreCompileInputs.cache
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.exe
+C:\Users\Futo Richard\Desktop\Fizikai szimulációk\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.pdb
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.exe.config
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.exe
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\bin\Debug\2bodysim.pdb
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.AssemblyReference.cache
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\MainWindow.baml
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\MainWindow.g.cs
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\App.g.cs
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim_MarkupCompile.cache
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.g.resources
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\_2bodysim.Properties.Resources.resources
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.GenerateResource.cache
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.csproj.CoreCompileInputs.cache
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.exe
+C:\Users\Futo Richard\Desktop\Szakdolgozat próbálgatás\2bodysim 0.4\2bodysim\obj\Debug\2bodysim.pdb
