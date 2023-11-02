@@ -35,7 +35,7 @@ namespace _2bodysim
             Object2.Width = object2Size;
             Object2.Height = object2Size;
 
-            Trajectory.Stroke = Brushes.DarkMagenta;
+            Trajectory.Stroke = Brushes.Blue;
             Trajectory.StrokeThickness = 1;
         }
 

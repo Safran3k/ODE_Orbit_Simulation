@@ -14,7 +14,7 @@ namespace _2bodysim
         PhysicsEngine physicsEngine;
         VisualEngine visualEngine;
         DispatcherTimer timer;
-        int remainingSeconds = 60;
+        int remainingSeconds = 90;
         bool isSimulationRunning = false;
 
         public MainWindow()
@@ -75,12 +75,12 @@ namespace _2bodysim
         private void StartAnimation(object sender, EventArgs e)
         {
             double[] results = physicsEngine.UpdateOrbit();
-            double x = results[0];
-            double y = results[2];
-            UpdateMeasurementsLabel((Math.Sin(x) * 120) + x, results[1], (Math.Cos(y) * 120) + y, results[3]);
-            visualEngine.DrawOrbitLine(new Point((Math.Sin(x) * 120) + x, (Math.Cos(y) * 120) + y));
-            Canvas.SetLeft(visualEngine.Object1, (Math.Sin(x) * 120) + x);
-            Canvas.SetTop(visualEngine.Object1, (Math.Cos(y) * 120) + y);
+            double x = (Math.Sin(results[0]) * 120) + results[0];
+            double y = (Math.Cos(results[2]) * 120) + results[2];
+            UpdateMeasurementsLabel(x, results[1], y, results[3]);
+            visualEngine.DrawOrbitLine(new Point(x + 10, y + 10)); // The +10 is because the size of the ball is 20 pixels
+            Canvas.SetLeft(visualEngine.Object1, x);
+            Canvas.SetTop(visualEngine.Object1, y);
             
         }
 
@@ -101,6 +101,7 @@ namespace _2bodysim
                 physicsEngine.ResetSimulation((int)(mainCanvas.Width / 2), (int)(mainCanvas.Height / 2));
             }
         }
+
 
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
