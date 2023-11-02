@@ -58,5 +58,13 @@ namespace _2bodysim
             Time += Dt;
             return result;
         }
+
+        public void ResetSimulation(double borderWidth, double borderHeight)
+        {
+            xx[0] = borderWidth;
+            xx[1] = 20;
+            xx[2] = borderHeight;
+            xx[3] = 20;
+        }
     }
 }
