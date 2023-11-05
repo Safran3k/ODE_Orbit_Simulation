@@ -17,7 +17,7 @@
         <Button x:Name="btnStart" Content="Start" Canvas.Left="352" Canvas.Top="426" Width="93" Height="33" FontSize="14" Click="btnStart_Click"/>
         <Button x:Name="btnReset" Content="Reset" Canvas.Left="450" Canvas.Top="426" Width="93" Height="33" FontSize="14" Click="btnReset_Click"/>
         <Button x:Name="btnClose" Content="Close" Canvas.Left="547" Canvas.Top="426" Width="93" Height="33" FontSize="14" Click="btnClose_Click"/>
-        <ComboBox Name="cbSolvers" Canvas.Left="648" Width="194" FontSize="14" IsReadOnly="True" SelectedIndex="0"/>
+        <ComboBox Name="cbSolvers" Canvas.Left="648" Width="194" FontSize="14" IsReadOnly="True" SelectedIndex="0" SelectionChanged="cbSolvers_SelectionChanged"/>
     </Canvas>
 
 

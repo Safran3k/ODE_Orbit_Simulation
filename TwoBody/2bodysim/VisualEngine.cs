@@ -11,12 +11,17 @@ namespace _2bodysim
 {
     public class VisualEngine
     {
+        #region Fields
         Ellipse object1;
         Ellipse object2;
         Polyline trajectory;
+        #endregion
+
+        #region Getter/Setter
         public Ellipse Object1 { get => object1; set => object1 = value; }
         public Ellipse Object2 { get => object2; set => object2 = value; }
         public Polyline Trajectory { get => trajectory; set => trajectory = value; }
+        #endregion
 
         public VisualEngine()
         {
@@ -25,17 +30,20 @@ namespace _2bodysim
             Trajectory = new Polyline();
         }
 
-        public void Initialize(int object1Size, int object2Size)
+        public void InitializeStaticObject(int object2Size)
         {
-            Object1.Fill = new SolidColorBrush(Colors.Blue);
-            Object1.Width = object1Size;
-            Object1.Height = object1Size;
-
             Object2.Fill = new SolidColorBrush(Colors.Orange);
             Object2.Width = object2Size;
             Object2.Height = object2Size;
+        }
 
-            Trajectory.Stroke = Brushes.Blue;
+        public void InitializeDynamicObject(int object1Size, Color color)
+        {
+            Object1.Fill = new SolidColorBrush(color);
+            Object1.Width = object1Size;
+            Object1.Height = object1Size;
+
+            Trajectory.Stroke = new SolidColorBrush(color);
             Trajectory.StrokeThickness = 1;
         }
 

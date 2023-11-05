@@ -39,7 +39,7 @@ namespace _2bodysim.ODE_Solvers
             for (int i = 0; i < n; i++) { x[i] += (k1[i] + (2 * k2[i]) + (2 * k3[i]) + k4[i]) / 6; }
 
             double error = 0.0;
-            double tolerance = 0.001;
+            double tolerance = 0.0001;
 
             for (int i = 0; i < n; i++) { error += Math.Abs((k1[i] + 2 * k2[i] + 2 * k3[i] + k4[i]) / 6); }
 

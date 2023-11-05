@@ -16,14 +16,16 @@ namespace _2bodysim
         DispatcherTimer timer;
         int remainingSeconds = 90;
         bool isSimulationRunning = false;
+        SolversEnum selectedSolver;
 
         public MainWindow()
         {
             InitializeComponent();
             cbSolvers.ItemsSource = Enum.GetValues(typeof(SolversEnum));
-            physicsEngine = new PhysicsEngine((int)(mainCanvas.Width / 2), 20, (int)(mainCanvas.Height / 2), 20, 0.001);
+
             visualEngine = new VisualEngine();
-            visualEngine.Initialize(20, 20);
+            visualEngine.InitializeStaticObject(20);
+            visualEngine.InitializeDynamicObject(20, Colors.Blue);
 
             Canvas.SetLeft(visualEngine.Object1, (int)(mainCanvas.Width / 2));
             Canvas.SetTop(visualEngine.Object1, (int)(mainCanvas.Height / 2));
@@ -74,21 +76,21 @@ namespace _2bodysim
 
         private void StartAnimation(object sender, EventArgs e)
         {
-            double[] results = physicsEngine.UpdateOrbit();
-            double x = (Math.Sin(results[0]) * 120) + results[0];
-            double y = (Math.Cos(results[2]) * 120) + results[2];
-            UpdateMeasurementsLabel(x, results[1], y, results[3]);
+            double[] result = physicsEngine.UpdateOrbit();
+            double x = (Math.Sin(result[0]) * 120) + result[0];
+            double y = (Math.Cos(result[2]) * 120) + result[2];
+            UpdateMeasurementsLabel(x, result[1], y, result[3]);
             visualEngine.DrawOrbitLine(new Point(x + 10, y + 10)); // The +10 is because the size of the ball is 20 pixels
             Canvas.SetLeft(visualEngine.Object1, x);
             Canvas.SetTop(visualEngine.Object1, y);
-            
         }
 
         private void ResetSimulation()
         {
             if (mainCanvas.Children.Count > 1)
             {
-                visualEngine.Initialize(20, 20);
+                visualEngine.InitializeStaticObject(20);
+                visualEngine.InitializeDynamicObject(20, Colors.Blue);
                 isSimulationRunning = false;
                 remainingSeconds = 60;
                 lbX.Content = "x: 0.00";
@@ -98,7 +100,15 @@ namespace _2bodysim
                 Canvas.SetLeft(visualEngine.Object2, (int)(mainCanvas.Width / 2));
                 Canvas.SetTop(visualEngine.Object2, (int)(mainCanvas.Height / 2));
                 visualEngine.ClearOrbitLine();
-                physicsEngine.ResetSimulation((int)(mainCanvas.Width / 2), (int)(mainCanvas.Height / 2));
+                //physicsEngine.ResetSimulation((int)(mainCanvas.Width / 2), (int)(mainCanvas.Height / 2));
+                physicsEngine = new PhysicsEngine(
+                        selectedSolver,
+                        (int)(mainCanvas.Width / 2),
+                        20,
+                        (int)(mainCanvas.Height / 2),
+                        20,
+                        0.001
+                    );
             }
         }
 
@@ -111,8 +121,19 @@ namespace _2bodysim
                 if (visualEngine == null)
                 {
                     visualEngine = new VisualEngine();
-                    visualEngine.Initialize(20, 20);
+                    visualEngine.InitializeStaticObject(20);
+                    visualEngine.InitializeDynamicObject(20, Colors.Blue);
                 }
+
+                physicsEngine = new PhysicsEngine(
+                        selectedSolver,
+                        (int)(mainCanvas.Width / 2),
+                        20,
+                        (int)(mainCanvas.Height / 2),
+                        20,
+                        0.001
+                    );
+
                 isSimulationRunning = true;
                 InitializeTimer();
                 timer.Tick += Timer_Tick;
@@ -129,6 +150,16 @@ namespace _2bodysim
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
             Close();
+        }
+
+        private void cbSolvers_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedSolver = (SolversEnum)((ComboBox)sender).SelectedItem;
+            if (isSimulationRunning)
+            {
+                ResetSimulation();
+                isSimulationRunning = !isSimulationRunning;
+            }
         }
     }
 }
