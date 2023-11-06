@@ -8,7 +8,6 @@ namespace _2bodysim
 {
     public enum SolversEnum
     {
-        Select_a_value,
         Euler,
         Adaptive_Modified_Euler,
         Runge_Kutta_4,
